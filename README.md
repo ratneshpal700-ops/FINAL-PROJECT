@@ -149,4 +149,5 @@ numpy
 - EuroSAT has no genuine before/after imagery — Module 2's T1/T2 pairs are a documented simulation (same tile re-augmented = unchanged, cross-class pairs = changed), not real temporal data.
 - The "spatial" block split is a pseudo-spatial proxy based on on-disk tile order, since the public `torchvision` EuroSAT loader doesn't expose true tile lat/lon.
 - EuroSAT (10 classes) and UC Merced (21 classes) don't share a label set — cross-dataset evaluation uses a manually matched 5-class subset (forest, freeway, buildings, denseresidential, river); the remaining 16 UC Merced classes are excluded by design.
-
+### Demo video
+https://github.com/user-attachments/assets/18e60c84-3643-421d-a560-d8628842f56a
