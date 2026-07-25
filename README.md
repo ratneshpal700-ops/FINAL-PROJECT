@@ -151,3 +151,13 @@ numpy
 - EuroSAT (10 classes) and UC Merced (21 classes) don't share a label set — cross-dataset evaluation uses a manually matched 5-class subset (forest, freeway, buildings, denseresidential, river); the remaining 16 UC Merced classes are excluded by design.
 ### Demo video
 https://github.com/user-attachments/assets/18e60c84-3643-421d-a560-d8628842f56a
+### Conclusion 
+Two-phase fine-tuning clearly helped on in-distribution data: unfreezing the last two ResNet-18 blocks raised
+EuroSAT validation macro-F1 from 0.849 to 0.954 over the frozen-only baseline, both comfortably ahead of
+the from-scratch baseline CNN's 0.879. The embedding-based change detector separates simulated
+changed/unchanged pairs almost perfectly (AUC 0.988) at threshold 0.456. The spatial-block vs.
+random-split comparison showed negligible leakage at this scale (0.849 vs 0.851). The standout problem is
+generalization to UC Merced, where matched-subset macro-F1 collapsed to 0.084 — with more time, the
+highest-value next step would be investigating that gap (e.g. resolution-matching, additional
+domain-adaptation fine-tuning, or re-evaluating the fully fine-tuned model rather than only the
+frozen-backbone one) before adding bonus tasks.
