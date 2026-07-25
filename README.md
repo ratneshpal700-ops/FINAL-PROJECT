@@ -36,7 +36,7 @@ This repo covers three linked modules:
 
 \* the fully fine-tuned model's UC Merced score wasn't computed in this run — only the frozen-backbone variant was cross-evaluated.
 
-> **Note on the domain gap:** macro-F1 collapses from 0.849 (EuroSAT val) to 0.084 (UC Merced matched subset) for the frozen-backbone model — a real domain shift between Sentinel-2 (EuroSAT) and aerial (UC Merced) imagery, not a labeling artifact. See [Limitations](#limitations).
+> **Note on the domain gap:** macro-F1 collapses from 0.849 (EuroSAT val) to 0.084 (UC Merced matched subset) for the frozen-backbone model — a real domain shift between Sentinel-2 (EuroSAT) and aerial (UC Merced) imagery, not a labeling artifact.
 
 <p align="center">
   <img src="assets/class_distribution.png" width="480"><br>
@@ -44,7 +44,7 @@ This repo covers three linked modules:
 </p>
 
 <p align="center">
-  <img src="assets/baseline_loss_curve.png" width="400">
+  <img src="class_distribution.png" width="400">
   <img src="assets/finetuned_loss_curve.png" width="400"><br>
   <sub>Baseline CNN loss curve (left) vs. two-phase fine-tuned ResNet-18 loss curve (right)</sub>
 </p>
