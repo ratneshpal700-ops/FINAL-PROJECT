@@ -45,7 +45,7 @@ This repo covers three linked modules:
 
 <p align="center">
   <img src="class_distribution.png" width="400">
-  <img src="assets/finetuned_loss_curve.png" width="400"><br>
+  <img src="baseline_loss_curve.png" width="400"><br>
   <sub>Baseline CNN loss curve (left) vs. two-phase fine-tuned ResNet-18 loss curve (right)</sub>
 </p>
 
