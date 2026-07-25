@@ -151,14 +151,3 @@ numpy
 - The "spatial" block split is a pseudo-spatial proxy based on on-disk tile order, since the public `torchvision` EuroSAT loader doesn't expose true tile lat/lon.
 - EuroSAT (10 classes) and UC Merced (21 classes) don't share a label set — cross-dataset evaluation uses a manually matched 5-class subset (forest, freeway, buildings, denseresidential, river); the remaining 16 UC Merced classes are excluded by design.
 
-## Bonus tasks
-
-None of the optional bonus tasks (GradCAM, multi-threshold toggle, t-SNE/UMAP embedding visualization, class-imbalance experiment) are implemented in this version.
-
-## Demo video
-
-[Add link to your 3-minute demo video here]
-
-## License
-
-[Add your license here, e.g. MIT]
