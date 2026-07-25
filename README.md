@@ -39,19 +39,18 @@ This repo covers three linked modules:
 > **Note on the domain gap:** macro-F1 collapses from 0.849 (EuroSAT val) to 0.084 (UC Merced matched subset) for the frozen-backbone model — a real domain shift between Sentinel-2 (EuroSAT) and aerial (UC Merced) imagery, not a labeling artifact.
 
 <p align="center">
-  <img src="assets/class_distribution.png" width="480"><br>
+  <img src="class_distribution.png" width="480"><br>
   <sub>EuroSAT class distribution</sub>
 </p>
 
 <p align="center">
-  <img src="class_distribution.png" width="400">
   <img src="baseline_loss_curve.png" width="400"><br>
   <sub>Baseline CNN loss curve (left) vs. two-phase fine-tuned ResNet-18 loss curve (right)</sub>
 </p>
 
 <p align="center">
-  <img src="assets/confusion_matrix.png" width="480"><br>
-  <sub>Fine-tuned model — EuroSAT validation confusion matrix (macro-F1 = 0.954)</sub>
+  <img src="finetuned_loss_curve.png" width="480"><br>
+  <sub>Fine-tuned loss curve model — EuroSAT validation confusion matrix (macro-F1 = 0.954)</sub>
 </p>
 
 ### Change detection
@@ -62,15 +61,15 @@ This repo covers three linked modules:
 </p>
 
 <p align="center">
-  <img src="assets/change_heatmap_1.png" width="800"><br>
-  <img src="assets/change_heatmap_2.png" width="800"><br>
+  <img src="change_heatmap_1.png" width="800"><br>
+  <img src="change_heatmap_2.png" width="800"><br>
   <sub>Sample change heatmaps (green = no change, red = changed). See <code>notebooks/</code> for all 5 required pairs.</sub>
 </p>
 
 ### Error analysis
 
 <p align="center">
-  <img src="assets/error_analysis.png" width="800"><br>
+  <img src="error_analysis.png" width="800"><br>
   <sub>Top-5 highest-confidence misclassifications on EuroSAT validation</sub>
 </p>
 
