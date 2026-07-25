@@ -57,7 +57,7 @@ This repo covers three linked modules:
 ### Change detection
 
 <p align="center">
-  <img src="assets/roc_curve.png" width="480"><br>
+  <img src="roc_curve.png" width="480"><br>
   <sub>ROC curve over 200 simulated T1/T2 pairs — AUC = 0.988, selected threshold = 0.456 cosine similarity</sub>
 </p>
 
